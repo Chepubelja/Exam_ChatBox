@@ -25,6 +25,9 @@
   line-height: normal;
   letter-spacing: normal;
 }
+.chat-box__name-surname:hover {
+  text-decoration: underline;
+}
 .chat-box__name-surname_friend1::after {
   content: 'Kristaps Elsins';
   visibility: visible;

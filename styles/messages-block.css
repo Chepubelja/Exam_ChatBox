@@ -29,6 +29,7 @@
   float: left;
   background-size: contain;
   margin-left: 16px;
+  cursor: pointer;
 }
 .message-block__person-photo_friend1 {
   background-image: url(https://res.cloudinary.com/demo/image/facebook/100007339754837.jpg);
