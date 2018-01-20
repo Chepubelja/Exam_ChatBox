@@ -48,14 +48,14 @@
   cursor: pointer;
 }
 .header__menu-item_background-plus {
-  background-image: url(../../icons/Plus.svg);
+  background-image: url(../icons/Plus.svg);
 }
 .header__menu-item_background-video {
-  background-image: url(../../icons/Video.svg);
+  background-image: url(../icons/Video.svg);
 }
 .header__menu-item_background-cog {
-  background-image: url(../../icons/Cog.svg);
+  background-image: url(../icons/Cog.svg);
 }
 .header__menu-item_background-close {
-  background-image: url(../../icons/Close.svg);
+  background-image: url(../icons/Close.svg);
 }

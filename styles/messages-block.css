@@ -34,7 +34,7 @@
   background-image: url(https://res.cloudinary.com/demo/image/facebook/100007339754837.jpg);
 }
 .message-block__person-photo_friend2 {
-  background-image: url("../../images/kristaps_elsins.jpg");
+  background-image: url("../images/kristaps_elsins.jpg");
 }
 .message-block__message-wrapper {
   padding: 6px 14px 6px 12px;
