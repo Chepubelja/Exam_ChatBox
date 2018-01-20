@@ -1,8 +1,17 @@
-.header {
+.chat-box {
+  width: 100%;
+  height: 384px;
+  border-radius: 6px 6px 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
+  overflow: hidden;
+  position: relative;
+}
+.chat-box__header {
   height: 32px;
   background-color: #2979ff;
 }
-.header__name-surname {
+.chat-box__name-surname {
   float: left;
   color: white;
   font-family: OpenSans-Bold, sans-serif;
@@ -16,30 +25,30 @@
   line-height: normal;
   letter-spacing: normal;
 }
-.header__name-surname_friend1::after {
+.chat-box__name-surname_friend1::after {
   content: 'Kristaps Elsins';
   visibility: visible;
 }
-.header__name-surname_friend2::after {
+.chat-box__name-surname_friend2::after {
   content: 'Gary Oldman';
   visibility: visible;
 }
-.header__activity-state {
+.chat-box__activity-state {
   float: left;
   height: 6px;
   width: 6px;
   border-radius: 100%;
   margin: 13px 0 0 13px;
 }
-.header__activity-state_active {
+.chat-box__activity-state_active {
   background-color: #69f0ae;
 }
-.header__menu {
+.chat-box__menu {
   margin: 0;
   float: right;
   padding-right: 1px;
 }
-.header__menu-item {
+.chat-box__menu-item {
   display: inline-block;
   float: left;
   background: no-repeat center;
@@ -47,15 +56,15 @@
   padding-left: 26px;
   cursor: pointer;
 }
-.header__menu-item_background-plus {
+.chat-box__menu-item_background-plus {
   background-image: url(../icons/Plus.svg);
 }
-.header__menu-item_background-video {
+.chat-box__menu-item_background-video {
   background-image: url(../icons/Video.svg);
 }
-.header__menu-item_background-cog {
+.chat-box__menu-item_background-cog {
   background-image: url(../icons/Cog.svg);
 }
-.header__menu-item_background-close {
+.chat-box__menu-item_background-close {
   background-image: url(../icons/Close.svg);
 }
