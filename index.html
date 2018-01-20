@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Box</title>
-    <link rel="stylesheet" href="styles/header.css" type="text/css">
     <link rel="stylesheet" href="styles/chat-box.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/new-message-block.css" type="text/css">
@@ -16,12 +15,12 @@
     <header class="chat-box__header">
         <span class="chat-box__activity-state chat-box__activity-state_active"></span>
         <h3 class="chat-box__name-surname chat-box__name-surname_friend1"></h3>
-        <nav class="chat-box__menu">
-            <img class="chat-box__menu-item chat-box__menu-item_background-plus">
-            <img class="chat-box__menu-item chat-box__menu-item_background-video">
-            <img class="chat-box__menu-item chat-box__menu-item_background-cog">
-            <img class="chat-box__menu-item chat-box__menu-item_background-close">
-        </nav>
+        <div class="chat-box__menu">
+            <button class="chat-box__menu-item chat-box__menu-item_background-plus"></button>
+            <button class="chat-box__menu-item chat-box__menu-item_background-video"></button>
+            <button class="chat-box__menu-item chat-box__menu-item_background-cog"></button>
+            <button class="chat-box__menu-item chat-box__menu-item_background-close"></button>
+        </div>
     </header>
     <div class="messages-box">
         <div class="message-block message-block_left">
@@ -33,7 +32,7 @@
         </div>
         <div class="message-block message-block_left">
             <img class="message-block__person-photo message-block__person-photo_friend1">
-                <p class="message-block__message message-block__message_left">I can't see updated views yet</p>
+            <p class="message-block__message message-block__message_left">I can't see updated views yet</p>
         </div>
         <div class="message-block message-block_right">
             <p class="message-block__message message-block__message_right">Hi, as I noted in Email last
@@ -50,13 +49,13 @@
         <form class="chat-form">
             <input class="chat-form__new-message-field" placeholder="Type a message..." type="text">
         </form>
-        <nav class="new-message-block__menu">
-            <img class="new-message-block__menu-item new-message-block__menu-item_background-picture">
-            <img class="new-message-block__menu-item new-message-block__menu-item_background-gif">
-            <img class="new-message-block__menu-item new-message-block__menu-item_background-smile">
-            <img class="new-message-block__menu-item new-message-block__menu-item_background-calendar">
-            <img class="new-message-block__menu-item new-message-block__menu-item_background-camera">
-        </nav>
+        <div class="new-message-block__menu">
+            <button class="new-message-block__menu-item new-message-block__menu-item_background-picture"></button>
+            <button class="new-message-block__menu-item new-message-block__menu-item_background-gif"></button>
+            <button class="new-message-block__menu-item new-message-block__menu-item_background-smile"></button>
+            <button class="new-message-block__menu-item new-message-block__menu-item_background-calendar"></button>
+            <button class="new-message-block__menu-item new-message-block__menu-item_background-camera"></button>
+        </div>
     </div>
 </section>
 </body>
