@@ -1,11 +1,10 @@
-@import "../../fonts.css";
 .header {
   height: 32px;
   background-color: #2979ff;
   &__name-surname {
     float: left;
     color: white;
-    font-family: OpenSans-Bold;
+    font-family: OpenSans-Bold, sans-serif;
     font-size: 12px;
     font-weight: bold;
     margin: 0;
@@ -15,6 +14,14 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    &_friend1::after {
+      content: 'Kristaps Elsins';
+      visibility: visible;
+    }
+    &_friend2::after {
+      content: 'Gary Oldman';
+      visibility: visible;
+    }
   }
   &__activity-state {
     float: left;

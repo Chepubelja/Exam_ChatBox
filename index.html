@@ -10,71 +10,53 @@
     <link rel="stylesheet" href="chat-box/footer/footer.css" type="text/css">
     <link rel="stylesheet" href="chat-box/messages-block/messages-block.css">
     <link rel="stylesheet" href="chat-box/time-wrapper/time-wrapper.css">
-
-    <!--OpenSans Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 <section class="chat-box">
     <header class="header">
         <span class="header__activity-state header__activity-state_active"></span>
-        <h3 class="header__name-surname">
-            Kristaps Elsins
-        </h3>
-        <ul class="header__menu">
-            <li class="header__menu-item header__menu-item_background-plus"></li>
-            <li class="header__menu-item header__menu-item_background-video"></li>
-            <li class="header__menu-item header__menu-item_background-cog"></li>
-            <li class="header__menu-item header__menu-item_background-close"></li>
-        </ul>
+        <h3 class="header__name-surname header__name-surname_friend1"></h3>
+        <nav class="header__menu">
+            <img class="header__menu-item header__menu-item_background-plus">
+            <img class="header__menu-item header__menu-item_background-video">
+            <img class="header__menu-item header__menu-item_background-cog">
+            <img class="header__menu-item header__menu-item_background-close">
+        </nav>
     </header>
     <div class="messages-box">
         <div class="message-block message-block_left">
-            <img class="message-block__person-photo">
-            <div class="message-block__message-wrapper message-block__message-wrapper_left">
-                <p class="message-block__message">Yo, Can you update views?</p>
-            </div>
+            <img class="message-block__person-photo message-block__person-photo_friend1">
+            <p class="message-block__message message-block__message_left">Yo, Can you update views?</p>
         </div>
         <div class="time-wrapper">
             <time class="time-wrapper__messages-time" datetime="2018-01-19">FRI 11:30AM</time>
         </div>
         <div class="message-block message-block_left">
-            <img class="message-block__person-photo">
-            <div class="message-block__message-wrapper message-block__message-wrapper_left">
-                <p class="message-block__message">I can't see updated views yet</p>
-            </div>
+            <img class="message-block__person-photo message-block__person-photo_friend1">
+                <p class="message-block__message message-block__message_left">I can't see updated views yet</p>
         </div>
-
         <div class="message-block message-block_right">
-            <div class="message-block__message-wrapper message-block__message-wrapper_right">
-                <p class="message-block__message">Hi, as I noted in Email last
-                    week - I am on vacation.</p>
-            </div>
-            <div class="message-block__message-wrapper message-block__message-wrapper_right">
-                <p class="message-block__message">I will be back next week</p>
-            </div>
+            <p class="message-block__message message-block__message_right">Hi, as I noted in Email last
+                week - I am on vacation.</p>
+            <p class="message-block__message  message-block__message_right">I will be back next week</p>
         </div>
         <div class="message-block message-block_left">
-            <img class="message-block__person-photo">
-            <div class="message-block__message-wrapper message-block__message-wrapper_left">
-                <p class="message-block__message">Ahh, sorry, missed that!</p>
-            </div>
-            <div class="message-block__message-wrapper message-block__message-wrapper_left">
-                <p class="message-block__message">Let's talk next week</p>
-            </div>
+            <img class="message-block__person-photo message-block__person-photo_friend1">
+            <p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
+            <p class="message-block__message message-block__message_left">Let's talk next week</p>
         </div>
     </div>
     <div class="new-message-block">
         <form class="chat-form">
             <input class="chat-form__new-message-field" placeholder="Type a message..." type="text">
         </form>
-        <ul class="new-message-block__menu">
-            <li class="new-message-block__menu-item new-message-block__menu-item_background-picture"></li>
-            <li class="new-message-block__menu-item new-message-block__menu-item_background-gif"></li>
-            <li class="new-message-block__menu-item new-message-block__menu-item_background-smile"></li>
-            <li class="new-message-block__menu-item new-message-block__menu-item_background-calendar"></li>
-            <li class="new-message-block__menu-item new-message-block__menu-item_background-camera"></li>
-        </ul>
+        <nav class="new-message-block__menu">
+            <img class="new-message-block__menu-item new-message-block__menu-item_background-picture">
+            <img class="new-message-block__menu-item new-message-block__menu-item_background-gif">
+            <img class="new-message-block__menu-item new-message-block__menu-item_background-smile">
+            <img class="new-message-block__menu-item new-message-block__menu-item_background-calendar">
+            <img class="new-message-block__menu-item new-message-block__menu-item_background-camera">
+        </nav>
     </div>
 </section>
 </body>

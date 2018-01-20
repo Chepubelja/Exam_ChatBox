@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+@import "fonts.css";
 body {
     margin: 0;
     background-color: #e3f2fd;
@@ -9,4 +7,5 @@ body {
     -ms-user-select: text;
     user-select: text;
 }
+
 
