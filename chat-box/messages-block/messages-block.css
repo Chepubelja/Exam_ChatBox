@@ -65,6 +65,7 @@
   background-color: #2979ff;
   color: white;
   clear: right;
+  font-weight: 600;
 }
 .message-block__message-wrapper_right:not(:first-child),
 .message-block__message-wrapper_right:not(:last-child) {
