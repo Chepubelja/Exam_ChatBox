@@ -1,0 +1,87 @@
+@import "../../fonts.css";
+.messages-box {
+  height: 290px;
+  max-height: 1000px;
+  overflow-y: auto;
+}
+.message-block {
+  margin: 6px 0 6px 0;
+  width: 100%;
+  &:first-child {
+    margin-top: 15px;
+  }
+  &:last-child {
+    margin-bottom: 16px;
+  }
+  &:only-child {
+    border-radius: 50%;
+  }
+  &_left {
+    float: left;
+  }
+  &_right {
+    float: right;
+  }
+  &__person-photo {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    float: left;
+    background-size: contain;
+    margin-left: 16px;
+    background-image: url(https://res.cloudinary.com/demo/image/facebook/100007339754837.jpg);
+  }
+  &__message-wrapper {
+    padding: 6px 14px 6px 12px;
+    max-width: 186px;
+    margin-top: 1px;
+    &_left {
+      float: left;
+      margin-left: 8px;
+      background-color: #f3f3f3;
+      &:not(:first-of-type) {
+        margin-left: 52px;
+      }
+      &:not(:first-of-type), &:not(:last-of-type){
+        border-radius: 0 15px 15px 0;
+      }
+      &:last-of-type {
+        border-radius: 0 15px 15px 15px;
+      }
+      &:first-of-type {
+        border-radius: 15px 15px 15px 0;
+        margin-left: 9px;
+      }
+      &:not(:only-of-type) {
+        &:not(:first-of-type) {
+          clear: left;
+        }
+      }
+    }
+    &_right {
+      float: right;
+      margin-right: 14px;
+      background-color: #2979ff;
+      color: white;
+      clear: right;
+      &:not(:first-child), &:not(:last-child) {
+        border-radius: 15px 0 0 15px;
+      }
+      &:first-child {
+        border-radius: 15px 15px 0 15px;
+      }
+      &:last-child {
+        border-radius: 15px 0 15px 15px;
+      }
+    }
+    &:only-of-type {
+      border-radius: 15px;
+      padding: 6px 14px 6px 12px;
+    }
+  }
+  &__message {
+    margin: 0;
+    font-family: OpenSans;
+    font-size: 12px;
+  }
+}

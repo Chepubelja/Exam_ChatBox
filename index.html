@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="chat-box/header/header.css" type="text/css">
+    <link rel="stylesheet" href="chat-box/chat-box.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="chat-box/footer/footer.css" type="text/css">
+    <link rel="stylesheet" href="chat-box/messages-block/messages-block.css">
+    <link rel="stylesheet" href="chat-box/time-wrapper/time-wrapper.css">
+
+    <!--OpenSans Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<section class="chat-box">
+    <header class="header">
+        <span class="header__activity-state header__activity-state_active"></span>
+        <h3 class="header__name-surname">
+            Kristaps Elsins
+        </h3>
+        <ul class="header__menu">
+            <li class="header__menu-item header__menu-item_background-plus"></li>
+            <li class="header__menu-item header__menu-item_background-video"></li>
+            <li class="header__menu-item header__menu-item_background-cog"></li>
+            <li class="header__menu-item header__menu-item_background-close"></li>
+        </ul>
+    </header>
+    <main class="messages-box">
+        <div class="message-block message-block_left">
+            <img class="message-block__person-photo">
+            <div class="message-block__message-wrapper message-block__message-wrapper_left">
+                <p class="message-block__message">Yo, Can you update views?</p>
+            </div>
+        </div>
+        <div class="time-wrapper">
+            <time class="time-wrapper__messages-time" datetime="2018-01-19">FRI 11:30AM</time>
+        </div>
+        <div class="message-block message-block_left">
+            <img class="message-block__person-photo">
+            <div class="message-block__message-wrapper message-block__message-wrapper_left">
+                <p class="message-block__message">I can't see updated views yet</p>
+            </div>
+        </div>
+
+        <div class="message-block message-block_right">
+            <div class="message-block__message-wrapper message-block__message-wrapper_right">
+                <p class="message-block__message">Hi, as I noted in Email last
+                    week - I am on vacation.</p>
+            </div>
+            <div class="message-block__message-wrapper message-block__message-wrapper_right">
+                <p class="message-block__message">I will be back next week</p>
+            </div>
+        </div>
+        <div class="message-block message-block_left">
+            <img class="message-block__person-photo">
+            <div class="message-block__message-wrapper message-block__message-wrapper_left">
+                <p class="message-block__message">Ahh, sorry, missed that!</p>
+            </div>
+            <div class="message-block__message-wrapper message-block__message-wrapper_left">
+                <p class="message-block__message">Let's talk next week</p>
+            </div>
+        </div>
+    </main>
+    <div class="new-message-block">
+        <form class="chat-form">
+            <input class="chat-form__new-message-field" placeholder="Type a message..." type="text">
+        </form>
+        <ul class="new-message-block__menu">
+            <li class="new-message-block__menu-item new-message-block__menu-item_background-picture"></li>
+            <li class="new-message-block__menu-item new-message-block__menu-item_background-gif"></li>
+            <li class="new-message-block__menu-item new-message-block__menu-item_background-smile"></li>
+            <li class="new-message-block__menu-item new-message-block__menu-item_background-calendar"></li>
+            <li class="new-message-block__menu-item new-message-block__menu-item_background-camera"></li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>

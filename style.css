@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #e3f2fd;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+

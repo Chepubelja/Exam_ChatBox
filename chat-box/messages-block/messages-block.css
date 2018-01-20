@@ -1,0 +1,87 @@
+@import "../../fonts.css";
+.messages-box {
+  height: 290px;
+  max-height: 1000px;
+  overflow-y: auto;
+}
+.message-block {
+  margin: 6px 0 6px 0;
+  width: 100%;
+}
+.message-block:first-child {
+  margin-top: 15px;
+}
+.message-block:last-child {
+  margin-bottom: 16px;
+}
+.message-block:only-child {
+  border-radius: 50%;
+}
+.message-block_left {
+  float: left;
+}
+.message-block_right {
+  float: right;
+}
+.message-block__person-photo {
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  float: left;
+  background-size: contain;
+  margin-left: 16px;
+  background-image: url(https://res.cloudinary.com/demo/image/facebook/100007339754837.jpg);
+}
+.message-block__message-wrapper {
+  padding: 6px 14px 6px 12px;
+  max-width: 186px;
+  margin-top: 1px;
+}
+.message-block__message-wrapper_left {
+  float: left;
+  margin-left: 8px;
+  background-color: #f3f3f3;
+}
+.message-block__message-wrapper_left:not(:first-of-type) {
+  margin-left: 52px;
+}
+.message-block__message-wrapper_left:not(:first-of-type),
+.message-block__message-wrapper_left:not(:last-of-type) {
+  border-radius: 0 15px 15px 0;
+}
+.message-block__message-wrapper_left:last-of-type {
+  border-radius: 0 15px 15px 15px;
+}
+.message-block__message-wrapper_left:first-of-type {
+  border-radius: 15px 15px 15px 0;
+  margin-left: 9px;
+}
+.message-block__message-wrapper_left:not(:only-of-type):not(:first-of-type) {
+  clear: left;
+}
+.message-block__message-wrapper_right {
+  float: right;
+  margin-right: 14px;
+  background-color: #2979ff;
+  color: white;
+  clear: right;
+}
+.message-block__message-wrapper_right:not(:first-child),
+.message-block__message-wrapper_right:not(:last-child) {
+  border-radius: 15px 0 0 15px;
+}
+.message-block__message-wrapper_right:first-child {
+  border-radius: 15px 15px 0 15px;
+}
+.message-block__message-wrapper_right:last-child {
+  border-radius: 15px 0 15px 15px;
+}
+.message-block__message-wrapper:only-of-type {
+  border-radius: 15px;
+  padding: 6px 14px 6px 12px;
+}
+.message-block__message {
+  margin: 0;
+  font-family: OpenSans;
+  font-size: 12px;
+}

@@ -1,0 +1,56 @@
+@import "../../fonts.css";
+.header {
+  height: 32px;
+  background-color: #2979ff;
+  &__name-surname {
+    float: left;
+    color: white;
+    font-family: OpenSans-Bold;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 0 2px 8px;
+    cursor: pointer;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__activity-state {
+    float: left;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin: 13px 0 0 13px;
+    &_active {
+      background-color: #69f0ae;
+    }
+  }
+  &__menu {
+    margin: 0;
+    float: right;
+    padding-right: 1px;
+    &-item {
+      display: inline-block;
+      float: left;
+      background: no-repeat center;
+      height: 32px;
+      padding-left: 26px;
+      cursor: pointer;
+      &_background {
+        &-plus {
+          background-image: url(../../icons/Plus.svg);
+        }
+        &-video {
+          background-image: url(../../icons/Video.svg);
+        }
+        &-cog {
+          background-image: url(../../icons/Cog.svg);
+        }
+        &-close {
+          background-image: url(../../icons/Close.svg);
+        }
+      }
+    }
+  }
+}
