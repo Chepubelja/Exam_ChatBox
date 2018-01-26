@@ -1,0 +1,49 @@
+.create-message {
+  height: 62px;
+  border-top: solid 1px #e5e5e5;
+  width: 100%;
+  background-color: white;
+  &__input {
+    font-family: OpenSans-Semibold, sans-serif;
+    font-size: 13px;
+    border: 0;
+    padding: 5px 15px 3px 20px;
+    outline: none;
+    width: 85%;
+
+    &::-webkit-input-placeholder {
+      color: #cdcdcd;
+    }
+  }
+  &__options {
+    margin: 0;
+    float: left;
+    padding-left: 12px;
+  }
+  &__option {
+    display: inline-block;
+    float: left;
+    background: no-repeat center;
+    height: 32px;
+    padding-left: 26px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    text-indent: -9999px;
+    &_picture {
+      background-image: url(../icons/Picture.svg);
+    }
+    &_gif {
+      background-image: url(../icons/Gif.svg);
+    }
+    &_emoji {
+      background-image: url(../icons/Smile.svg);
+    }
+    &_calendar {
+      background-image: url(../icons/Calendar.svg);
+    }
+    &_camera {
+      background-image: url(../icons/Camera.svg);
+    }
+  }
+}

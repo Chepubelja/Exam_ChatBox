@@ -1,0 +1,48 @@
+.create-message {
+  height: 62px;
+  border-top: solid 1px #e5e5e5;
+  width: 100%;
+  background-color: white;
+}
+.create-message__input {
+  font-family: OpenSans-Semibold, sans-serif;
+  font-size: 13px;
+  border: 0;
+  padding: 5px 15px 3px 20px;
+  outline: none;
+  width: 85%;
+}
+.create-message__input::-webkit-input-placeholder {
+  color: #cdcdcd;
+}
+.create-message__options {
+  margin: 0;
+  float: left;
+  padding-left: 12px;
+}
+.create-message__option {
+  display: inline-block;
+  float: left;
+  background: no-repeat center;
+  height: 32px;
+  padding-left: 26px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  text-indent: -9999px;
+}
+.create-message__option_picture {
+  background-image: url(../icons/Picture.svg);
+}
+.create-message__option_gif {
+  background-image: url(../icons/Gif.svg);
+}
+.create-message__option_emoji {
+  background-image: url(../icons/Smile.svg);
+}
+.create-message__option_calendar {
+  background-image: url(../icons/Calendar.svg);
+}
+.create-message__option_camera {
+  background-image: url(../icons/Camera.svg);
+}

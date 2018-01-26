@@ -1,0 +1,49 @@
+.header {
+  height: 32px;
+  background-color: #2979ff;
+}
+.header__user-status {
+  float: left;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  margin: 13px 0 0 13px;
+}
+.header__user-status_online {
+  background-color: #69f0ae;
+}
+.header__friend-name {
+  float: left;
+  color: white;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 0 2px 8px;
+  cursor: pointer;
+}
+.header__friend-name:hover {
+  text-decoration: underline;
+}
+.header__option {
+  float: right;
+  background: no-repeat center;
+  height: 32px;
+  padding-left: 26px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  text-indent: -9999px;
+}
+.header__option_close {
+  background-image: url(../icons/Close.svg);
+}
+.header__option_settings {
+  background-image: url(../icons/Settings.svg);
+}
+.header__option_video {
+  background-image: url(../icons/Video.svg);
+}
+.header__option_add-friend {
+  background-image: url(../icons/Add_friend.svg);
+}

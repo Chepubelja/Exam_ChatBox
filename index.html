@@ -4,69 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Box</title>
-    <link rel="stylesheet" href="styles/chat-box.css" type="text/css">
+    <link rel="stylesheet" href="styles/header.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="stylesheet" href="styles/new-message-block.css" type="text/css">
-    <link rel="stylesheet" href="styles/messages-block.css">
-    <link rel="stylesheet" href="styles/time-wrapper.css">
+    <link rel="stylesheet" href="styles/message.css" type="text/css">
+    <link rel="stylesheet" href="styles/create-message.css">
+    <link rel="stylesheet" href="styles/chat-box.css">
+    <link rel="stylesheet" href="styles/chat-field.css">
 </head>
 <body>
 <section class="chat-box">
-    <header class="chat-box__header">
-        <span class="chat-box__activity-state chat-box__activity-state_active"></span>
-        <h3 class="chat-box__name-surname chat-box__name-surname_friend1"></h3>
-        <div class="chat-box__menu">
-            <button class="chat-box__menu-item chat-box__menu-item_background-plus"></button>
-            <button class="chat-box__menu-item chat-box__menu-item_background-video"></button>
-            <button class="chat-box__menu-item chat-box__menu-item_background-cog"></button>
-            <button class="chat-box__menu-item chat-box__menu-item_background-close"></button>
-        </div>
+    <header class="header">
+        <span class="header__user-status header__user-status_online"></span>
+        <h3 class="header__friend-name">Kristaps Elsins</h3>
+        <button class="header__option header__option_close">Close chat</button>
+        <button class="header__option header__option_settings">Settings</button>
+        <button class="header__option header__option_video">Start a video chat</button>
+        <button class="header__option header__option_add-friend">Add friends to chat</button>
     </header>
-    <div class="messages-box">
-        <div class="message-block message-block_left">
-            <img class="message-block__person-photo" src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28/100007339754837.jpg" alt="Kristaps Elsins">
-            <p class="message-block__message message-block__message_left">Yo, Can you update views?</p>
+    <div class="chat-field">
+        <div class="message message_friend">
+            <img class="message__avatar"
+                 src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28/100007339754837.jpg" alt="Kristaps Elsins">
+            <p class="message__text message__text_friend">Yo, Can you update views?</p>
         </div>
-        <div class="time-wrapper">
-            <time class="time-wrapper__messages-time" datetime="2018-01-19">FRI 11:30AM</time>
+        <time class="chat-field__messages-time" datetime="2018-01-19">FRI 11:30AM</time>
+        <div class="message message_friend">
+            <img class="message__avatar"
+                 src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28/100007339754837.jpg" alt="Kristaps Elsins">
+            <p class="message__text message__text_friend">I can't see updated views yet</p>
         </div>
-        <div class="message-block message-block_left">
-            <img class="message-block__person-photo" src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28/100007339754837.jpg" alt="Kristaps Elsins">
-            <p class="message-block__message message-block__message_left">I can't see updated views yet</p>
+        <div class="message message_author">
+            <p class="message__text message__text_author">Hi, as I noted in Email last week - I am
+                on vacation.</p>
+            <p class="message__text message__text_author">I will be back next week</p>
         </div>
-        <div class="message-block message-block_right">
-            <p class="message-block__message message-block__message_right">Hi, as I noted in Email last
-                week - I am on vacation.</p>
-            <p class="message-block__message  message-block__message_right">I will be back next week</p>
-        </div>
-        <div class="message-block message-block_left">
-            <img class="message-block__person-photo" src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28/100007339754837.jpg" alt="Kristaps Elsins">
-            <p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p>
-            <p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p><p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p><p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p>
-            <p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p>
-            <p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p>
-            <p class="message-block__message message-block__message_left">Ahh, sorry, missed that!</p>
-            <p class="message-block__message message-block__message_left">Let's talk next week</p>
+        <div class="message message_friend">
+            <img class="message__avatar"
+                 src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28/100007339754837.jpg" alt="Kristaps Elsins">
+            <p class="message__text message__text_friend">Ahh, sorry, missed that!</p>
+            <p class="message__text message__text_friend">Let's talk next week</p>
         </div>
     </div>
-    <div class="new-message-block">
-        <form class="chat-form">
-            <input class="chat-form__new-message-field" placeholder="Type a message..." type="text">
-        </form>
-        <div class="new-message-block__menu">
-            <button class="new-message-block__menu-item new-message-block__menu-item_background-picture"></button>
-            <button class="new-message-block__menu-item new-message-block__menu-item_background-gif"></button>
-            <button class="new-message-block__menu-item new-message-block__menu-item_background-smile"></button>
-            <button class="new-message-block__menu-item new-message-block__menu-item_background-calendar"></button>
-            <button class="new-message-block__menu-item new-message-block__menu-item_background-camera"></button>
+    <form class="create-message">
+        <input class="create-message__input" placeholder="Type a message..." type="text">
+        <div class="create-message__options">
+            <button class="create-message__option create-message__option_picture">Add a picture</button>
+            <button class="create-message__option create-message__option_gif">Add a gif</button>
+            <button class="create-message__option create-message__option_emoji">Add an emoji</button>
+            <button class="create-message__option create-message__option_calendar">Start a plan</button>
+            <button class="create-message__option create-message__option_camera">Take a picture using quick cam</button>
         </div>
-    </div>
+    </form>
 </section>
 </body>
 </html>

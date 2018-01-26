@@ -1,9 +1,4 @@
-.messages-box {
-  height: 290px;
-  max-height: 1000px;
-  overflow-y: auto;
-}
-.message-block {
+.message {
   margin: 6px 0 6px 0;
   width: 100%;
   &:first-child {
@@ -15,83 +10,35 @@
   &:only-child {
     border-radius: 50%;
   }
-  &_left {
+  &_friend {
     float: left;
   }
-  &_right {
+  &_author {
     float: right;
   }
-  &__person-photo {
+  &__avatar {
     border-radius: 50%;
     float: left;
     background-size: contain;
     margin-left: 16px;
     cursor: pointer;
   }
-  &__message-wrapper {
-    padding: 4px 15px 3px 8px;
-    margin-top: 1px;
-    &_left {
-      float: left;
-      margin-left: 8px;
-      background-color: #f3f3f3;
-      &:not(:first-of-type) {
-        margin-left: 52px;
-      }
-      &:not(:first-of-type), &:not(:last-of-type){
-        border-radius: 0 15px 15px 0;
-      }
-      &:last-of-type {
-        border-radius: 0 15px 15px 15px;
-      }
-      &:first-of-type {
-        border-radius: 15px 15px 15px 0;
-        margin-left: 9px;
-      }
-      &:not(:only-of-type) {
-        &:not(:first-of-type) {
-          clear: left;
-        }
-      }
-    }
-    &_right {
-      float: right;
-      margin-right: 14px;
-      background-color: #2979ff;
-      color: white;
-      clear: right;
-      font-weight: 600;
-      &:not(:first-child), &:not(:last-child) {
-        border-radius: 15px 0 0 15px;
-      }
-      &:first-child {
-        border-radius: 15px 15px 0 15px;
-      }
-      &:last-child {
-        border-radius: 15px 0 15px 15px;
-      }
-    }
-    &:only-of-type {
-      border-radius: 15px;
-      padding: 6px 14px 6px 12px;
-    }
-  }
-  &__message {
+  &__text {
     margin: 0;
     font-family: OpenSans, sans-serif;
     font-size: 12px;
     padding: 6px 14px 6px 12px;
-    max-width: 83%;
+    max-width: 67%;
     margin-top: 1px;
     word-wrap: break-word;
-    &_left {
+    &_friend {
       float: left;
       margin-left: 8px;
       background-color: #f3f3f3;
       &:not(:first-of-type) {
         margin-left: 52px;
       }
-      &:not(:first-of-type), &:not(:last-of-type){
+      &:not(:first-of-type), &:not(:last-of-type) {
         border-radius: 0 15px 15px 0;
       }
       &:last-of-type {
@@ -107,13 +54,14 @@
         }
       }
     }
-    &_right {
+    &_author {
       float: right;
       margin-right: 14px;
       background-color: #2979ff;
       color: white;
       clear: right;
       font-weight: 600;
+      text-align: end;
       &:not(:first-child), &:not(:last-child) {
         border-radius: 15px 0 0 15px;
       }
